@@ -97,7 +97,28 @@ func (m Model) View() string {
 		Headers(m.playerNames...).
 		Rows([][]string{row}...)
 
-	return t.String()
+	//hintStyle := lipgloss.NewStyle().
+	//	PaddingLeft(1).
+	//	PaddingRight(1).
+	//	Align(lipgloss.Center).
+	//	Foreground(lipgloss.Color("#444444"))
+
+	hintTable := table.New().
+		Border(lipgloss.RoundedBorder()).
+		BorderStyle(borderStyle).
+		StyleFunc(func(row, col int) lipgloss.Style {
+			switch {
+			case row == 0:
+				return onlinePlayerStyle
+			default:
+				return onlinePlayerStyle
+			}
+		}).
+		Headers("HINT").
+		Rows([][]string{{"-"}}...)
+
+	return lipgloss.JoinHorizontal(lipgloss.Left, t.String(), " ", hintTable.String())
+	//return t.String()
 }
 
 func handleNewState(m *Model, state *protocol.State) {

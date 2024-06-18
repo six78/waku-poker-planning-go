@@ -6,20 +6,21 @@ package view
 
 ```shell
 
-  Room:   238mvM91TbC9UJdUqKwtWFb  
-  
-  Issue:  https://github.com/golang/go/issues/19412              
-  Title:  Implement room encryption
+  ● Waku: 8 peer(s)
+    Room: W1Rka5Dz8GVGzgy1iq6gS5puS1x3JroeW4ZDTfBZkCfm (dealer)
+
+  Issue:  https://github.com/golang/go/issues/19412
+          proposal: spec: add sum types / discriminated unions
+          [LanguageChange] [v2] [Proposal] [NeedsInvestigation]
                                                     
-  ╭───────┬─────┬─────────┬────────┬─────────╮                                       
-  │ Alice │ Bob │ Charlie │ Didukh │ Sirotin │                           
-  ├───────┼─────┼─────────┼────────┼─────────┤           
-  │   1   │  3  │    8    │   13   │    3    │                                         
-  ╰───────┴─────┴─────────┴────────┴─────────╯    
-                      
-  Your vote:                                                      
+  ╭───────┬─────┬─────────┬────────┬─────────╮ ╭──────╮                                       
+  │ Alice │ Bob │ Charlie │ Didukh │ Sirotin │ │ HINT │                       
+  ├───────┼─────┼─────────┼────────┼─────────┤ ├──────┤
+  │   1   │  3  │    8    │   13   │    3    │ │   3  │                                         
+  ╰───────┴─────┴─────────┴────────┴─────────╯ ╰──────╯    
+  Advice: start discussion between Alice and Didukh                                                      
               ╭───╮                                                       
-  ╭───╮ ╭───╮ │ 3 │ ╭───╮ ╭───╮ ╭────╮ ╭────╮ ╭────╮                                    
+  ╭───╮ ╭───╮ │ 3 │ ╭───╮ ╭───╮ ╭────╮ ╭────╮ ╭────╮                                 
   │ 1 │ │ 2 │ ╰───╯ │ 5 │ │ 8 │ │ 13 │ │ 21 │ │ 34 │                                    
   ╰───╯ ╰───╯       ╰───╯ ╰───╯ ╰────╯ ╰────╯ ╰────╯                                    
                 ^

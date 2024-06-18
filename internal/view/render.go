@@ -90,10 +90,21 @@ func (m model) renderRoomCurrentIssueView() string {
 		)
 	}
 
+	style := lipgloss.NewStyle().Bold(true)
+	italic := lipgloss.NewStyle().Italic(true).Foreground(lipgloss.Color("#cccccc"))
+
 	return lipgloss.JoinVertical(lipgloss.Top,
 		m.issueView.View(),
 		"",
 		m.playersView.View(),
+		italic.Render(
+			fmt.Sprintf("%s %s %s %s",
+				italic.Render("Advice: start discussion between"),
+				style.Render("Alice"),
+				italic.Render("and"),
+				style.Render("Bob"),
+			),
+		),
 		m.deckView.View(),
 	)
 }
