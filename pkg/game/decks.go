@@ -1,8 +1,9 @@
 package game
 
 import (
-	"github.com/six78/2-story-points-cli/pkg/protocol"
 	"golang.org/x/exp/maps"
+
+	"github.com/six78/2-story-points-cli/pkg/protocol"
 )
 
 var fibonacciDeck = protocol.Deck{"1", "2", "3", "5", "8", "13", "21", "?"}

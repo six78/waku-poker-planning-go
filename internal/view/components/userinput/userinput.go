@@ -5,6 +5,7 @@ import (
 	"github.com/charmbracelet/bubbles/textinput"
 	"github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+
 	"github.com/six78/2-story-points-cli/internal/config"
 	"github.com/six78/2-story-points-cli/internal/view/messages"
 	"github.com/six78/2-story-points-cli/internal/view/states"

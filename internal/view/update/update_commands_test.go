@@ -1,12 +1,14 @@
 package update
 
 import (
-	"github.com/brianvoe/gofakeit/v6"
-	tea "github.com/charmbracelet/bubbletea"
-	"github.com/six78/2-story-points-cli/internal/testcommon"
-	"github.com/stretchr/testify/suite"
 	"reflect"
 	"testing"
+
+	"github.com/brianvoe/gofakeit/v6"
+	tea "github.com/charmbracelet/bubbletea"
+	"github.com/stretchr/testify/suite"
+
+	"github.com/six78/2-story-points-cli/internal/testcommon"
 )
 
 func TestUpdateCommands(t *testing.T) {

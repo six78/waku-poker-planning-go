@@ -2,6 +2,7 @@ package matchers
 
 import (
 	"fmt"
+
 	"github.com/six78/2-story-points-cli/pkg/protocol"
 )
 

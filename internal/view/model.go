@@ -2,11 +2,17 @@ package view
 
 import (
 	"fmt"
+	"net/url"
+	"strings"
+	"time"
+
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/spinner"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/pkg/errors"
+	"go.uber.org/zap"
+
 	"github.com/six78/2-story-points-cli/internal/config"
 	"github.com/six78/2-story-points-cli/internal/transport"
 	"github.com/six78/2-story-points-cli/internal/view/commands"
@@ -24,10 +30,6 @@ import (
 	"github.com/six78/2-story-points-cli/internal/view/update"
 	"github.com/six78/2-story-points-cli/pkg/game"
 	"github.com/six78/2-story-points-cli/pkg/protocol"
-	"go.uber.org/zap"
-	"net/url"
-	"strings"
-	"time"
 )
 
 type model struct {

@@ -2,8 +2,10 @@ package wakustatusview
 
 import (
 	"fmt"
+
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+
 	"github.com/six78/2-story-points-cli/internal/transport"
 	"github.com/six78/2-story-points-cli/internal/view/messages"
 )

@@ -3,13 +3,14 @@ package config
 import (
 	"flag"
 	"fmt"
-	"github.com/charmbracelet/lipgloss"
-	"github.com/shibukawa/configdir"
-	"go.uber.org/zap"
 	"os"
 	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/charmbracelet/lipgloss"
+	"github.com/shibukawa/configdir"
+	"go.uber.org/zap"
 )
 
 const OnlineMessagePeriod = 5 * time.Second

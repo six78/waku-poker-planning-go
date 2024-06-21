@@ -8,3 +8,6 @@ linters:
     - staticcheck
     - unused
     - testifylint
+    - goimports
+    - goconst
+#    - wrapcheck

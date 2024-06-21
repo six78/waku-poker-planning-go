@@ -2,8 +2,9 @@ package matchers
 
 import (
 	"encoding/json"
-	"github.com/six78/2-story-points-cli/pkg/protocol"
 	"testing"
+
+	"github.com/six78/2-story-points-cli/pkg/protocol"
 )
 
 type Callback func(state *protocol.State) bool

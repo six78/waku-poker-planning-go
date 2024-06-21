@@ -4,15 +4,17 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"reflect"
+	"time"
+
 	"github.com/jonboulle/clockwork"
 	"github.com/pkg/errors"
+	"go.uber.org/zap"
+	"golang.org/x/exp/slices"
+
 	"github.com/six78/2-story-points-cli/internal/transport"
 	"github.com/six78/2-story-points-cli/pkg/protocol"
 	"github.com/six78/2-story-points-cli/pkg/storage"
-	"go.uber.org/zap"
-	"golang.org/x/exp/slices"
-	"reflect"
-	"time"
 )
 
 var (

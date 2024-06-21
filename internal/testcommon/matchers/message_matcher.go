@@ -1,8 +1,9 @@
 package matchers
 
 import (
-	"github.com/six78/2-story-points-cli/pkg/protocol"
 	"testing"
+
+	"github.com/six78/2-story-points-cli/pkg/protocol"
 )
 
 type MessageMatcher struct {

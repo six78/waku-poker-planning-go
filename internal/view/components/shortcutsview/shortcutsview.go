@@ -2,9 +2,11 @@ package shortcutsview
 
 import (
 	"fmt"
+
 	bubblekey "github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+
 	"github.com/six78/2-story-points-cli/internal/view/commands"
 	"github.com/six78/2-story-points-cli/internal/view/messages"
 	"github.com/six78/2-story-points-cli/internal/view/states"

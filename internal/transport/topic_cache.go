@@ -1,14 +1,16 @@
 package transport
 
 import (
+	"strconv"
+
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/pkg/errors"
-	"github.com/six78/2-story-points-cli/internal/config"
-	"github.com/six78/2-story-points-cli/pkg/protocol"
 	waku "github.com/waku-org/go-waku/waku/v2/protocol"
 	"go.uber.org/zap"
-	"strconv"
+
+	"github.com/six78/2-story-points-cli/internal/config"
+	"github.com/six78/2-story-points-cli/pkg/protocol"
 )
 
 type ContentTopicCache struct {

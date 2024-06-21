@@ -2,12 +2,14 @@ package storage
 
 import (
 	"encoding/json"
-	"github.com/pkg/errors"
-	"github.com/six78/2-story-points-cli/internal/config"
-	"github.com/six78/2-story-points-cli/pkg/protocol"
-	"go.uber.org/zap"
 	"path"
 	"sync"
+
+	"github.com/pkg/errors"
+	"go.uber.org/zap"
+
+	"github.com/six78/2-story-points-cli/internal/config"
+	"github.com/six78/2-story-points-cli/pkg/protocol"
 
 	"github.com/shibukawa/configdir"
 )

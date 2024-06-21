@@ -2,12 +2,14 @@ package testcommon
 
 import (
 	"encoding/json"
+	"reflect"
+
 	"github.com/brianvoe/gofakeit/v6"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/six78/2-story-points-cli/internal/config"
 	"github.com/stretchr/testify/suite"
 	"go.uber.org/zap"
-	"reflect"
+
+	"github.com/six78/2-story-points-cli/internal/config"
 )
 
 type Suite struct {

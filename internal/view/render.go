@@ -2,10 +2,12 @@ package view
 
 import (
 	"fmt"
+	"strings"
+
 	"github.com/charmbracelet/lipgloss"
+
 	"github.com/six78/2-story-points-cli/internal/config"
 	"github.com/six78/2-story-points-cli/internal/view/states"
-	"strings"
 )
 
 /*

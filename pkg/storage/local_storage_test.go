@@ -1,13 +1,15 @@
 package storage
 
 import (
+	"testing"
+
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/shibukawa/configdir"
+	"github.com/stretchr/testify/suite"
+
 	"github.com/six78/2-story-points-cli/internal/config"
 	"github.com/six78/2-story-points-cli/internal/testcommon"
 	"github.com/six78/2-story-points-cli/pkg/protocol"
-	"github.com/stretchr/testify/suite"
-	"testing"
 )
 
 func TestLocalStorage(t *testing.T) {

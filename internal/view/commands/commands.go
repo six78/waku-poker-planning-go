@@ -1,14 +1,16 @@
 package commands
 
 import (
+	"time"
+
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/pkg/errors"
+
 	"github.com/six78/2-story-points-cli/internal/transport"
 	"github.com/six78/2-story-points-cli/internal/view/messages"
 	"github.com/six78/2-story-points-cli/internal/view/states"
 	"github.com/six78/2-story-points-cli/pkg/game"
 	"github.com/six78/2-story-points-cli/pkg/protocol"
-	"time"
 )
 
 func InitializeApp(game *game.Game, transport transport.Service) tea.Cmd {

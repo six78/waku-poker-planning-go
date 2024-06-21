@@ -2,10 +2,11 @@ package view
 
 import (
 	tea "github.com/charmbracelet/bubbletea"
+	"go.uber.org/zap"
+
 	"github.com/six78/2-story-points-cli/internal/config"
 	"github.com/six78/2-story-points-cli/internal/transport"
 	"github.com/six78/2-story-points-cli/pkg/game"
-	"go.uber.org/zap"
 )
 
 func Run(game *game.Game, transport transport.Service) int {

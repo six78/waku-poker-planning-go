@@ -2,15 +2,17 @@ package game
 
 import (
 	"context"
+	"testing"
+	"time"
+
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/jonboulle/clockwork"
-	mocktransport "github.com/six78/2-story-points-cli/internal/transport/mock"
-	mockstorage "github.com/six78/2-story-points-cli/pkg/storage/mock"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"testing"
-	"time"
+
+	mocktransport "github.com/six78/2-story-points-cli/internal/transport/mock"
+	mockstorage "github.com/six78/2-story-points-cli/pkg/storage/mock"
 )
 
 func TestOptions(t *testing.T) {

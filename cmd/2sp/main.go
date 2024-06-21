@@ -2,13 +2,15 @@ package main
 
 import (
 	"context"
+	"os"
+
 	"github.com/jonboulle/clockwork"
+
 	"github.com/six78/2-story-points-cli/internal/config"
 	"github.com/six78/2-story-points-cli/internal/transport"
 	"github.com/six78/2-story-points-cli/internal/view"
 	"github.com/six78/2-story-points-cli/pkg/game"
 	"github.com/six78/2-story-points-cli/pkg/storage"
-	"os"
 )
 
 func main() {

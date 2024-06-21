@@ -2,9 +2,11 @@ package game
 
 import (
 	"encoding/json"
-	"github.com/six78/2-story-points-cli/pkg/protocol"
+
 	"go.uber.org/zap"
 	"golang.org/x/exp/slices"
+
+	"github.com/six78/2-story-points-cli/pkg/protocol"
 )
 
 func (g *Game) handleStateMessage(payload []byte) {

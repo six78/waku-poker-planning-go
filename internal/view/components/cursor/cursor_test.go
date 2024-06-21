@@ -2,9 +2,10 @@ package cursor
 
 import (
 	"fmt"
+	"testing"
+
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/stretchr/testify/suite"
-	"testing"
 )
 
 func TestCursor(t *testing.T) {
